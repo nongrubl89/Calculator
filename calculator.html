@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+
+
+<body>
+    <div class="container">
+    <div class="calculator">
+        <div class="input" id="inputSpace">0</div>
+        <button class="buttons" value="0">0</button>
+        <button class="buttons">1</button>
+        <button class="buttons">2</button>
+        <button class="buttons">3</button>
+        <button class="buttons">4</button>
+        <button class="buttons">5</button>
+        <button class="buttons">6</button>
+        <button class="buttons">7</button>
+        <button class="buttons">8</button>
+        <button class="buttons">9</button>
+        <button class="operator buttonplus">+</button>
+        <button class="operator button--">-</button>
+        <button class="operator button-*">*</button>
+        <button class="operator button-/">/</button>
+        <button class="equals buttonequals" id= 'equals'>=</button>
+        <button class="dot" id="dot">.</button>
+        <button class="clear" id="clear">A/C</button>
+    </div>
+</div>
+<style>
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    
+}
+
+.calculator{
+    grid-column: 2/3;
+    grid-row: .5/1.5;
+    display:grid;
+    height:800px;
+    width: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6px;
+    grid-template-rows: repeat(8, 1fr);
+    justify-content: center;
+    margin-top: 20px;
+    
+   
+}
+
+.input{
+    display: grid;
+    grid-column: span 3;
+    grid-row: span 2;
+    border-radius: 6px;
+    border-color: rgb(218, 176, 197);
+    border-width: 1.5px;
+    border-style: solid;
+    background-color: rgb(255, 229, 225);
+    color: rgb(11, 80, 45);
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content:right;
+    align-content:center;
+    padding-right: 12px;
+    padding-top:120px;
+    font-size:xx-large;
+}
+.clear{
+  grid-column: span 2;
+  border-radius: 6px;
+    background-color: rgb(15, 105, 60);
+    font-size: medium;
+    color: rgb(196, 240, 198);
+    font-size: x-large;
+   
+}
+
+.dot{
+  grid-column: span 1.5;
+  border-radius: 6px;
+    background-color: rgb(196, 240, 198);
+    font-size: medium;
+    color: rgb(11, 80, 45);
+    border-color: rgb(11, 80, 45);
+    border-width: .8px;
+    border-style: solid;
+}
+
+.buttons{
+    border-radius: 6px;
+    background-color: rgb(196, 240, 198);
+    border-color: rgb(11, 80, 45);
+    border-width: .8px;
+    border-style: solid;
+    font-size: medium;
+    color: rgb(11, 80, 45);
+    font-size: x-large;
+}
+.equals{
+    border-radius: 6px;
+    background-color: rgb(196, 240, 198);
+    font-size: medium;
+    color: rgb(11, 80, 45);
+    font-size: x-large;
+    border-color: rgb(11, 80, 45);
+    border-width: .8px;
+    border-style: solid;
+}
+
+.operator{
+    border-radius: 6px;
+    background-color: rgb(196, 240, 198);
+    font-size: medium;
+    color: rgb(11, 80, 45);
+    font-size: x-large;
+    border-color: rgb(11, 80, 45);
+    border-width: .8px;
+    border-style: solid;
+}
+
+</style>
+<script src="calculator.js"></script> 
+</body>
+</html>
+
+
+
